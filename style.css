@@ -2237,6 +2237,7 @@ html {
   
   .section.about-section {
     z-index: 1;
+    padding-top: 2rem;
     background-color: #000;
     overflow: hidden;
   }
@@ -3088,7 +3089,6 @@ html {
   
     .navbar {
       margin-top: 2rem;
-      margin-bottom: 8rem;
       padding-top: 0;
       padding-left: 2rem;
       padding-right: 2rem;
@@ -3868,4 +3868,81 @@ html {
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+  }
+
+  /* Landing Section */
+  .hero {
+    width: auto;
+    height: 100vh;
+  }
+
+  .hero-container {
+    padding: 8rem 4rem 4rem 4rem;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-align {
+    text-align: left;
+  }
+
+  .right-align {
+    text-align: right;
+  }
+
+  .middle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .landing-socials {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landing-image {
+    height: 12rem;
+    width: auto;
+    padding: 1rem;
+  }
+
+  .social-link {
+    padding: 1rem;
+  }
+
+  @media screen and (max-width:991px){
+    .hero {
+      width: auto;
+      height: 70vh;
+      padding: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 787px) {
+    .hero {
+      width: auto;
+      height: 90vh;
+      text-align: center;
+      padding: 4rem;
+    }
+
+    .middle-section {
+      display: block;
+    }
+
+    .right-align, .left-align{
+      text-align: center;
+    }
+
+    .landing-socials {
+      text-align: center;
+    }
   }
