@@ -3946,3 +3946,16 @@ html {
       text-align: center;
     }
   }
+
+/* Style for the text you want to animate */
+.text-slide-left {
+  transform: translateX(0);
+  transition: transform 0.1s ease-out; /* Adjust timing as needed */
+}
+
+.text-slide-right {
+  transform: translateX(0);
+  transition: transform 0.1s ease-out; /* Adjust timing as needed */
+}
+
+
