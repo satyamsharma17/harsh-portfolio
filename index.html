@@ -14,6 +14,7 @@
       type="image/x-icon"
     />
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       @media (min-width: 992px) {
         html.w-mod-js:not(.w-mod-ix)
@@ -335,8 +336,9 @@
             </li>
           </ul>
         </div>
-        <h2
-          class="right-align text-slide-right"
+        <div class="text-slide-right">
+          <h2
+          class="right-align"
         >
           UX Designer
         </h2>
@@ -345,6 +347,7 @@
         >
           Based in India
         </p>
+        </div>
       </div>
     </div>
 
@@ -375,7 +378,7 @@
               </div>
               <div
                 id="w-node-_07b76600-9861-7af3-9a58-a35bd8a6436d-c6bbc7f4"
-                class="about-text-section"
+                class="about-text-section" data-aos="zoom-in"
               >
                 <h3>Strategic approach</h3>
                 <p class="grey-text">
@@ -398,7 +401,7 @@
               </div>
               <div
                 id="w-node-_144c5845-f66a-4294-dcfe-cfffed053c8e-c6bbc7f4"
-                class="about-text-section"
+                class="about-text-section" data-aos="zoom-in"
               >
                 <h3>collaboration is key</h3>
                 <p class="grey-text">
@@ -422,7 +425,7 @@
               </div>
               <div
                 id="w-node-e6147f7e-59d9-1738-f8f4-a78ebf7f484c-c6bbc7f4"
-                class="about-text-section"
+                class="about-text-section" data-aos="zoom-in"  
               >
                 <h3>end to end delivery</h3>
                 <p class="grey-text">
@@ -444,21 +447,21 @@
             id="w-node-_414e0ba6-3c0e-3e24-0bba-6efef3f53164-c6bbc7f4"
             class="services-container"
           >
-            <div class="service-content-container">
+            <div class="service-content-container"  data-aos="fade-right">
               <div class="label service-number">01</div>
               <div class="service-title-container">
                 <div>Research and strategy</div>
                 <p class="grey-text label">User research, audits and stratey</p>
               </div>
             </div>
-            <div class="service-content-container">
+            <div class="service-content-container"  data-aos="fade-right">
               <div class="label service-number">02</div>
               <div class="service-title-container">
                 <div>UX design</div>
                 <p class="grey-text label">Workshops, wireframes, user tests</p>
               </div>
             </div>
-            <div class="service-content-container">
+            <div class="service-content-container"  data-aos="fade-right">
               <div class="label service-number">03</div>
               <div class="service-title-container">
                 <div>UI Design</div>
@@ -491,7 +494,7 @@
                     transform: translate3d(0, 100%, 0) scale3d(1, 1, 1)
                       rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
                   "
-                  class="large-number"
+                  class="large-number" 
                 >
                   50+
                 </div>
@@ -722,7 +725,13 @@
         -webkit-font-smoothing: antialiased;
       }
     </style>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="main.js"></script>
   </body>
 </html>

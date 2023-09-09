@@ -25,3 +25,55 @@ window.addEventListener('scroll', function() {
 
     textRight.style.transform = `translateX(${rightTranslation}%)`;
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const controller = new ScrollMagic.Controller();
+
+    // Animation for email text
+    const emailTimeline = gsap.timeline();
+    emailTimeline.to('.regular-text', {
+        duration: 1,
+        opacity: 0,
+        x: '-50%'
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: '.middle-section',
+        triggerHook: 0.5,
+        duration: '100%'
+    })
+    .setTween(emailTimeline)
+    .addTo(controller);
+
+    // Animation for landing image
+    const imageTimeline = gsap.timeline();
+    imageTimeline.to('.landing-image', {
+        duration: 1,
+        opacity: 0,
+        scale: 2
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: '.middle-section',
+        triggerHook: 0.5,
+        duration: '100%'
+    })
+    .setTween(imageTimeline)
+    .addTo(controller);
+
+    // Animation for socials
+    const socialsTimeline = gsap.timeline();
+    socialsTimeline.to('.landing-socials', {
+        duration: 1,
+        opacity: 0,
+        x: '50%'
+    });
+
+    new ScrollMagic.Scene({
+        triggerElement: '.middle-section',
+        triggerHook: 0.5,
+        duration: '100%'
+    })
+    .setTween(socialsTimeline)
+    .addTo(controller);
+});

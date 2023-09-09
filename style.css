@@ -2,10 +2,12 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     font-family: sans-serif;
+    scroll-behavior: smooth;
   }
   
   body {
     margin: 0;
+    overflow-x: hidden;
   }
   
   article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
@@ -3943,6 +3945,7 @@ html {
     }
 
     .landing-socials {
+      transform: translate3d(0, 0px, 0px) !important;
       text-align: center;
     }
   }
@@ -3958,4 +3961,18 @@ html {
   transition: transform 0.1s ease-out; /* Adjust timing as needed */
 }
 
+.regular-text {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.landing-image {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.landing-socials {
+  opacity: 1;
+  transform: translateX(0);
+}
 
