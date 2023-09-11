@@ -3952,9 +3952,14 @@ html {
     }
   }
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 429px) {
     .regular-text {
       font-size: .5rem;
+    }
+
+    .hero-container {
+      padding: 0;
+      height: 50%;
     }
   }
 
