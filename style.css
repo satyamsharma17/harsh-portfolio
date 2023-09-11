@@ -3879,7 +3879,8 @@ html {
   }
 
   .hero-container {
-    padding: 8rem 4rem 4rem 4rem;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
     width: 100%;
     overflow: hidden; /* Hide the overflowing parts */
     position: relative;
@@ -3948,6 +3949,12 @@ html {
     .landing-socials {
       transform: translate3d(0, 0px, 0px) !important;
       text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    .regular-text {
+      font-size: .5rem;
     }
   }
 
