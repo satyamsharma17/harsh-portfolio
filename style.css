@@ -3879,10 +3879,7 @@ html {
   }
 
   .hero-container {
-    padding-top: 8rem;
-    padding-right: 4rem;
-    padding-left: 4rem;
-    padding-bottom: 4rem;
+    padding: 8rem 8rem 4rem 8rem;
     width: 100%;
     overflow: hidden; /* Hide the overflowing parts */
     position: relative;
@@ -3952,7 +3949,7 @@ html {
     }
   }
 
-  @media screen and (max-width: 429px) {
+  @media screen and (max-width: 479px) {
     .regular-text {
       font-size: .5rem;
     }
