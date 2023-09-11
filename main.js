@@ -2,19 +2,17 @@ const textRight = document.querySelector('.text-slide-right');
 const textLeft = document.querySelector('.text-slide-left');
 
 window.addEventListener('scroll', function() {
-    // Calculate the percentage scrolled
     const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
 
-    // Translate the text based on the scroll percentage and viewport width
+    // Calculate the amount of translation based on viewport width
     const viewportWidth = window.innerWidth;
-
-    // Calculate the amount of translation for both left and right
     const leftTranslation = (-viewportWidth * scrollPercentage) + "px";
     const rightTranslation = (viewportWidth * scrollPercentage) + "px";
 
     textLeft.style.transform = `translateX(${leftTranslation})`;
     textRight.style.transform = `translateX(${rightTranslation})`;
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const controller = new ScrollMagic.Controller();

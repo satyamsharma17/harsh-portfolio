@@ -3880,7 +3880,9 @@ html {
 
   .hero-container {
     padding: 8rem 4rem 4rem 4rem;
-    width: auto;
+    width: 100%;
+    overflow: hidden; /* Hide the overflowing parts */
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
