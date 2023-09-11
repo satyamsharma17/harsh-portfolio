@@ -3911,7 +3911,7 @@ html {
   }
 
   .landing-image {
-    height: 12rem;
+    height: 8rem;
     width: auto;
     padding: 1rem;
   }
@@ -3939,7 +3939,6 @@ html {
     .middle-section {
       display: block;
     }
-
     .right-align, .left-align{
       text-align: center;
     }
@@ -3964,6 +3963,7 @@ html {
 .regular-text {
   opacity: 1;
   transform: translateX(0);
+  
 }
 
 .landing-image {

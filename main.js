@@ -1,29 +1,19 @@
-// Get the text element
 const textRight = document.querySelector('.text-slide-right');
 const textLeft = document.querySelector('.text-slide-left');
 
-// Listen for the scroll event
 window.addEventListener('scroll', function() {
     // Calculate the percentage scrolled
     const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
 
-    // Translate the text based on the scroll percentage
-    const maxTranslation = -500; // Adjust based on how far left you want the text to move (this is in % of its width)
-    const leftTranslation = maxTranslation * scrollPercentage;
+    // Translate the text based on the scroll percentage and viewport width
+    const viewportWidth = window.innerWidth;
 
-    textLeft.style.transform = `translateX(${leftTranslation}%)`;
-});
+    // Calculate the amount of translation for both left and right
+    const leftTranslation = (-viewportWidth * scrollPercentage) + "px";
+    const rightTranslation = (viewportWidth * scrollPercentage) + "px";
 
-// Listen for the scroll event
-window.addEventListener('scroll', function() {
-    // Calculate the percentage scrolled
-    const scrollPercentage = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight));
-
-    // Translate the text based on the scroll percentage
-    const maxTranslation = 500; // Adjust based on how far left you want the text to move (this is in % of its width)
-    const rightTranslation = maxTranslation * scrollPercentage;
-
-    textRight.style.transform = `translateX(${rightTranslation}%)`;
+    textLeft.style.transform = `translateX(${leftTranslation})`;
+    textRight.style.transform = `translateX(${rightTranslation})`;
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -50,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     imageTimeline.to('.landing-image', {
         duration: 1,
         opacity: 0,
-        scale: 2
+        scale: 1.5
     });
 
     new ScrollMagic.Scene({
